@@ -1,25 +1,42 @@
 <!doctype html>
 <html>
 <head>
-    <title>21 Savage Fan Site</title>
+    <title>Roulette</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
+  <header class="mainHdr">
+      <p class="loginTitle"> Casino Staff Login:</p>
+      <a class="loginBtn" href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
+  
+    
+  </header>
+<div class="mainContainer container">
 
     <div class="jumbotron text-center">
-        <h1>21 Savage Fan Site</h1>
-        <img src="img/savage21.jpg" alt="21 Savage Profile Photo">
+        <img src="img/title.png" alt="casino">
+    <section>
+      <form class="" action="/game" method="post">
+        <input id="betAmount" type="text" placeholder="Place Bet" name="" value="">
+        <select id="userChoice" class="" name="">
+          <option value="red">Red</option>
+          <option value="black">Black</option>
+        </select>
+        <button id="submit" class="btn btn-default" type="button" name="button">Submit</button>
+      </form>
 
-        <p>Login or Signup:</p>
-
-        <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
-        <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Signup</a>
-
-    </div>
-
+      <div class="bet">
+      </div>
+      <div id="display">
+        <p class="result"></p>
+        <p class="moneyTotal"></p>
+      </div>
+    </section>
+  </div>
 </div>
 </body>
+
+<script src="main.js"></script>
 </html>
